@@ -3,7 +3,7 @@ const Logger = require('./src/logger/logger.js');
 const UserController = require('./src/controllers/userController.js');
 const TaskController = require('./src/controllers/taskController.js');
 
-async function main() {
+(async function main() {
   const app = new App(
     new Logger(),
       // eslint-disable-next-line no-undef
@@ -13,6 +13,4 @@ async function main() {
   );
 
   app.init();
-}
-
-main();
+})();
